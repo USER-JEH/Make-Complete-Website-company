@@ -114,7 +114,7 @@ nav ul li a{
 }
 
 /* about */
-#about{
+#about, #offer{
 	padding: 100px 0;
 	display: flex;
 	align-items: center;
@@ -223,4 +223,229 @@ nav ul li a{
 
 .course-text button{
 	margin: 30px 0;
+}
+
+/* offer */
+#offer button{
+	margin: 30px 0;
+}
+
+/* contact */
+.contact-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contact-left-col, .contact-right-col{
+	flex-basis: 50%;
+}
+
+.contact-right-col img{
+	width:100%;
+}
+
+form{
+	max-width: 350px;
+	margin:30px 0
+}
+
+form input{
+	width: 100%;
+	padding: 12px 10px;
+	margin-bottom: 5px;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	border: 2px solid #fab3c4; 
+}
+
+.btn-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-box button{
+	flex-basis: 48%;
+	padding:18px 0;
+}
+
+/* footer */
+#footer{
+	padding: 50px 0 30px;
+}
+
+hr{
+	width: 100%;
+	border: 0;
+	border-top: 1px solid #f67c92;
+} 
+
+.footer-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-left-col{
+	flex-basis: 50%;
+	margin-top: 100px;
+}
+
+.footer-right-col{
+	flex-basis: 35%;
+}
+
+.footer-links{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+.link-title h4{
+	color: #fab3c4;
+	margin-bottom: 20px;
+}
+
+.link-title small{
+	font-size: 10px;
+	color: #777;
+}
+
+.footer-info{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-logo{
+	width: 100px;
+}
+
+.footer-logo button{
+	padding: 15px 40px;
+	margin-top: 20px;
+	font-size: 10px;
+}
+
+.copyright-text, .footer-logo{
+	flex-basis: 40%;
+	
+}
+
+/* icons */
+.social-icons{
+	width: 30px;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.social-icons img{
+	display: block;
+	width: 30px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+	#header{
+		background-image: none;
+	}
+
+	.container{
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	.logo{
+		margin-top: 20px;
+		width: 70px;
+	}
+	
+	.header-text{
+		margin-top: 100px;
+	}
+	
+	h1{
+		font-size: 25px;
+	}
+	
+	#menuBtn{
+		width: 30px;
+		right: 30px;
+	}
+
+	.common-btn{
+		padding: 12px 20px
+	}
+	
+	.social-icons img{
+		width: 20px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+	}
+  
+	#about,#offer{
+		display: block;
+		flex-wrap: nowrap;
+		
+	}
+
+	.about-left-col,.about-right-col{
+		flex-basis: 100%;
+	}
+
+	.about-text{
+		margin:50px;
+	}
+
+	.about-text h2{
+		font-size: 19px;
+	}
+
+
+
+
+	.feature-col{
+		flex-basis: 100%;
+		margin-bottom: 30px;
+	}
+
+
+	.course-left-col{
+		flex-basis: 100%;
+	}
+
+	.course-right-col{
+		flex-basis: 100%;
+		margin-top: 30px;
+	}
+
+
+.contact-left-col,.contact-right-col{
+	flex-basis: 100%;
+	margin-top: 30px;
+}
+
+.footer-left-col,.footer-right-col{
+	flex-basis: 100%;
+}
+.footer-left-col{
+	margin-top: 40px;
+}
+.link-title{
+	flex-basis: 50%;
+	margin-bottom: 10px;
+}
+
+.footer-logo img{
+	width: 100px ;
+}
+
 }
